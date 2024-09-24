@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width =device-width,initial-Scale=1.0">
+    <title>document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+    .hero {
+        height: 100vh;
+        background: url('pic 1.jfif') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero h1{
+        color:black;
+        font-size: 4rem;
+}
+.hero{
+    background-image: url('pic 1.jfif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+align-items: center;
+text-align: center;
+color: black;
+}
+.hero h1{
+    font-size: 3rem;
+}
+.hero p {
+    font-size: 1.5rem;
+}
+.card-img-top {
+      height: 150px;
+      object-fit: cover;
+    }
+@media(max-width: 992px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    hero p {
+    font-size: 1.25rem;
+  }
+.navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+.hero p {
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1.25rem;
+  }
+  
+  .navbar-toggler {
+    margin-right: 0;
+  }
+  .card-img-top {
+      height: 150px;
+      object-fit: cover;
+    }
+}
+@media (max-width: 576px) {
+  
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 0.875rem;
+  }
+.btn-lg {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+}
+</style>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#">website</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarnav" aria-expanded></button>
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarnav">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link" herf="#sevices">service</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link active" herf="#appointment">appointment</a>
+        </li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="hero">
+<div class="text-center">
+    <h1>welcome to our home</h1>
+    <p class="lead text-black">caring for you always</p>
+    <a href="#services" class="btn btn-primary btn-lg"></a>learn more</a>
+    
+    </div>
+    </section>
+    <section id="services" class="py-5">
+      <div class="container">
+        <div class="row text-center">
+          <h2>our service</h2>
+          <p class="lead">we offer a write range of healthcare service to meet your needs.</p>
+      </div>
+      <div class="row mt-4">
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="picture 2.jfif" class="card-img-top" alt="service 1">
+            <div class="card-body">
+              <h5 class="card-title">flower</h5>
+              <p class ="card-text">welcome to my flower</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card">
+          <img src="download 1.jfif" class="card-img-top" alt="service 1">
+          <div class="card-body">
+            <h5 class="card-title">home </h5>
+            <p class ="card-text">welcome to my home </p>
+        </div>
+        </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card">
+            <img src="flower.jfif" class="card-img-top" alt="service 1">
+            <div class="card-body">
+              <h5 class="card-title">flowers</h5>
+              <p class ="card-text">welcome to my flower </p>
+          </div>
+          </div>
+          </div>
+    </section>
+    <section id="appoinment" class="py-5 bg-primary">
+      <div class="container">
+        <div calss="row text-center">
+          <h2> BOOK ON HOME</h2>
+          <p class="lead">fill out the form below to schedule an appoinment with our home.</p>
+</div>
+<form id="appoinmentForm" class="needs-validation" novalidate>
+  <div class="mb-3">
+    <label for="name" class="form-label">full name</label>
+    <input type="text" class="form-control" id="name" placeholder="enter your name"required>
+    <div class="invalid-feedback">please enter your name</div>
+    </div>
+    
+      <div class="mb-3">
+        <label for="email" class="form-label">email</label>
+        <input type="email" class="form-control" id="email" placeholder="enter your email"required>
+        <div class="invalid-feedback">please enter a vaild email</div>
+        </div>
+        
+          <div class="mb-3">
+            <label for="date" class="form-label">date</label>
+            <input type="date" class="form-control" id="date" placeholder="enter your date"required>
+            <div class="invalid-feedback">please enter your date</div>
+            </div>
+    <button  type="submit" class="btn btn-primary w-100">SUBMIT</button>
+    
+</form>
+</div>
+      </div>
+    </section>
+    <footer class="big-info text-white text-center py-3">
+      <p>@ 2024 hospital Name. all rights reserved.</p>
+    </footer>
+    </body>
+    </html>
